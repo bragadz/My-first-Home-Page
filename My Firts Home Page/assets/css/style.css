@@ -1,0 +1,124 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    list-style: none;
+    text-decoration: none;
+}
+header{
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 33px 9%;
+    background: transparent;
+    cursor: none;
+}
+.cursor-dot{
+    width: 7px;
+    height: 7px;
+    background-color: white;
+
+}
+.cursor-outline{
+    width: 30px;
+    height: 30px;
+    border: 2px solid hsla(0, 0%, 100%, 0.5);
+}
+.cursor-dot,
+.cursor-outline{
+    position: fixed;
+    top: 0;
+    left: 0;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    z-index: 1;
+    pointer-events: none;
+}
+.logo {
+    font-size: 0; /* Esconde o texto */
+    background: url("/assets/imgs/logo/822616_preview.png") center/contain no-repeat; /* Define a imagem da logo */
+    width: 100px; /* Defina a largura desejada para a imagem */
+    height: 50px; /* Defina a altura desejada para a imagem */
+    margin: 0; /* Certifique-se de que não há margens para reposicionar a logo */
+    opacity: 0.9;
+    cursor: none;
+}
+
+.navlist{
+    display: flex;    
+}
+.navlist a{
+    color: white;
+    margin-left: 60px;
+    font-size: 25px;
+    font-weight: 600;
+    border-bottom: 2px solid transparent;
+    transition: all .55s ease;
+    cursor: none;
+}
+.navlist a:hover{
+    border-bottom: 2px solid white;
+}
+#menu-icon{
+    color: white;
+    font-size: 50px;
+    z-index: 10001;
+    cursor: pointer;
+    cursor: none;
+}
+
+.hero{
+    height: 100%;
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(245.59deg, #4d9559 0%, #38703d 28.53%, #133917 75.52%);
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 2rem;
+    cursor: none;
+    background-size: cover;
+}
+section{
+    padding: 0 19%;
+}
+.hero-text h5{
+    font-size: 14px;
+    font-weight: 400;
+    color: white;
+    margin-bottom: 40px;
+
+}
+.pro {
+    color: rgba(0, 0, 0, 0.521); 
+}
+.hero-text h1{
+    font-family: 'Poppins', cursive;
+    font-size: 120px;
+    line-height: 1;
+    color: white;
+    margin: 0 0 40px;
+}
+.hero-text h4{
+    font-size: 19px;
+    font-weight: 600px;
+    color: white;
+    margin-bottom: 10px;
+}
+.hero-text p{
+    color: rgb(2, 22, 9);
+    font-size: 18px;
+    line-height: 1.9;
+    margin-bottom: 40px;
+}
+.vetor1-img img{
+    width: 150%;
+    height: auto;
+}
